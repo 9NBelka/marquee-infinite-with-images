@@ -1,0 +1,226 @@
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<style>
+  body {
+    background-color: black;
+  }
+
+  .marquee-infinite {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+  }
+
+  .marquee-infinite div {
+    display: flex;
+    width: calc(260% + 20vw); /* Ширина двух блоков вместе с небольшим запасом */
+    animation: marquee-infinite 10s linear infinite;
+  }
+
+  .marquee-infinite span {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 4vw;
+  }
+
+  .marquee-infinite span:first-child{
+    margin-right: 4vw;
+  }
+
+  .marquee-infinite img {
+    height: 4vw; /* Увеличенная высота изображения */
+    object-fit: contain; /* Сохраняем пропорции изображений */
+    max-width: none; /* Убираем ограничение по ширине */
+  }
+
+  @keyframes marquee-infinite {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50.7%);
+    }
+  }
+
+  .marquee-infinite.phone{
+      display: none;
+    }
+
+  @media (max-width: 980px){
+    .marquee-infinite{
+      display: none;
+    }
+
+    .marquee-infinite.phone{
+      display: flex;
+      flex-direction: column;
+    }
+
+    .marquee-infinite.phone .left{
+      display: flex;
+      width: calc(260% + 20vw); /* Ширина двух блоков вместе с небольшим запасом */
+      animation: marquee-infinite-left 10s linear infinite;
+    }
+
+    @keyframes marquee-infinite-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-55.4%);
+    }
+  }
+
+    .marquee-infinite.phone .right{
+      display: flex;
+      width: calc(270% + 20vw); /* Ширина двух блоков вместе с небольшим запасом */
+      animation: marquee-infinite-right 11s linear infinite;
+      margin-top: 4vw;
+    }
+
+    @keyframes marquee-infinite-right {
+    from {
+      transform: translateX(-51%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+    .marquee-infinite span {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    gap: 6vw;
+  }
+
+  .marquee-infinite span:first-child{
+    margin-right: 6vw;
+  }
+
+   .marquee-infinite.phone img {
+    height: 10vw; /* Увеличенная высота изображения */
+    object-fit: contain; /* Сохраняем пропорции изображений */
+    max-width: none; /* Убираем ограничение по ширине */
+  }
+  }
+
+  @media (max-width: 480px){
+
+     .marquee-infinite.phone .left{
+      display: flex;
+      width: calc(300% + 20vw); /* Ширина двух блоков вместе с небольшим запасом */
+      animation: marquee-infinite-left 5s linear infinite;
+    }
+
+    @keyframes marquee-infinite-left {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-69.3%);
+    }
+  }
+
+    .marquee-infinite.phone .right{
+      display: flex;
+      width: calc(280% + 20vw); /* Ширина двух блоков вместе с небольшим запасом */
+      animation: marquee-infinite-right 5s linear infinite;
+      margin-top: 4vw;
+    }
+
+    @keyframes marquee-infinite-right {
+    from {
+      transform: translateX(-66.05%);
+    }
+    to {
+      transform: translateX(0);
+    }
+  }
+
+     .marquee-infinite.phone img {
+    height: 15vw; /* Увеличенная высота изображения */
+    object-fit: contain; /* Сохраняем пропорции изображений */
+    max-width: none; /* Убираем ограничение по ширине */
+  }
+  }
+
+   
+</style>
+
+<div class="screen-six-background-black">
+  <div class="container1920">
+    <div class="container">
+      <div class="screen-six-background-black-block">
+        <h3 class="screen-six-title-text" id="ru">нам доверяют:</h3>
+        <h3 class="screen-six-title-text active-ua" id="ua">нам довіряють:</h3>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="marquee-infinite">
+  <div>
+    <span>
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/logo-HeroCraft.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/My-Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/mytona.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/perfect-play.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/PixodeLOGO0809.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/play.cat_.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/RJ_Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/univirlab-.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/voodoo.png">
+    </span>
+    <span>
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/logo-HeroCraft.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/My-Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/mytona.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/perfect-play.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/PixodeLOGO0809.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/play.cat_.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/RJ_Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/univirlab-.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/voodoo.png">
+    </span>
+  </div>
+</div>
+
+<div class="marquee-infinite phone">
+  <div class="left">
+    <span>
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/logo-HeroCraft.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/My-Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/mytona.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/perfect-play.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/PixodeLOGO0809.png">
+
+    </span>
+    <span>
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/logo-HeroCraft.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/My-Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/mytona.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/perfect-play.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/PixodeLOGO0809.png">
+
+    </span>
+  </div>
+  <div class="right">
+    <span>
+      
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/play.cat_.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/RJ_Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/univirlab-.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/voodoo.png">
+    </span>
+    <span>
+    
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/play.cat_.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/RJ_Games.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/univirlab-.png">
+      <img src="https://lms.k-syndicate.school/wp-content/uploads/2024/07/voodoo.png">
+    </span>
+  </div>
+</div>
